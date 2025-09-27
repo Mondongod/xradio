@@ -41,7 +41,7 @@ echo "     Armbian version:  $ARMBIANVERS"
 if [ ! -d "$KERNELDIR/build" ]; then
 	echo "     Attempting to load kernel headers ..."
 	echo
-	wget "https://apt.armbian.com/pool/main/l/linux-$KVERS/$HEADERS"
+	wget "https://beta.armbian.com/pool/main/l/linux-$KVERS/$HEADERS"
 	if [ -f "$HEADERS" ]; then
 		dpkg -i "$HEADERS"
 	else
